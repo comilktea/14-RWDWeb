@@ -1,0 +1,513 @@
+.banner{
+    background-image: url(../picture/homebanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/* ------ FirstPage ------ */
+.mainTxt .first{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,75%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.animation{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+}
+/*slogan*/
+.mainTxt .first .animation h2{
+    color: #fff;
+    letter-spacing: 3px;
+    opacity: 85%;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
+.mainTxt .first .animation p{
+    color: #fff;
+    font-size: 16px;
+    opacity: 85%;
+    text-align: center;
+    display: inline-block;
+}
+/*副標*/
+.animation p{
+    color: #fff;
+    font-size: 25px;
+    opacity: 85%;
+    text-align: center;
+    display: inline-block;
+}
+.mainTxt .socialMedia{
+    display: none;
+}
+/*learnmore按鈕*/
+.mainTxt .first .animation .button{
+    display: block;
+    cursor: pointer;
+    background-color: #EF8463;
+    margin: 20px auto 10px;
+    padding: 10px 20px;
+    border-radius: 300px;
+    border: none; 
+}
+.animation .button a{
+    color: #fff;
+    font-weight: 700;
+    font-family: 'jf-openhunin', '微軟正黑體', "Fredoka", "sans-serif";
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+}
+.mainTxt .first .animation .button:hover{ 
+    background-color: #fff;
+}
+.mainTxt .first .animation .button:hover a{ 
+    background-color: #fff;
+    color: #EF8463;
+
+}
+/*3point*/
+.title{
+    font-size: 35px;
+    line-height: 1.4;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.threePoints img{
+    width: 30%;
+}
+.threePoints{
+    background-image: url(../picture/conceptimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.wrap h3{ 
+    color: #000000;
+    font-size: 1.5em;
+}
+.productsBg{
+    background-image: url("../picture/bigfood.png");
+    background-repeat: repeat;
+    background-size: cover;
+    max-height:100vh
+}
+/*News*/
+.itemN{
+    margin: 0 5%;
+    box-sizing: border-box ;
+    max-width:70%;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border: 1px  rgb(212, 212, 212) solid;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0 auto;
+    box-shadow: none;
+}
+.news h2 {
+    font-size: 35px;
+}
+.itemN.article img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+}
+.itemN .txt{
+    margin: 2% 5% ;
+}
+.itemN h4{
+    text-align: left;
+    margin: 15px 0;
+    line-height: 1.5;
+    flex-grow: 1;
+    text-shadow: 0 0 0.1em #b6b0b0,0 0 0.2em #b6b0b0;
+    font-size: 25px;
+    color: #EF8463;
+}
+.txt p{
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 18px;
+    padding: 5px 10px;
+    flex-grow: 1;
+    font-weight: normal;
+    text-indent: 20px;
+}
+.txt a{
+    text-decoration: none;
+    color: #666666;
+    display: inline-block;
+}
+.txt p:hover{
+    color: #EF8463;
+}
+/*本月主打*/
+.goods{
+    max-width: 400px;
+}
+.goods .pic {
+    width: 70%;
+    margin: 0 auto;
+}
+.goods .pic img{
+    border-radius: 15px;
+}
+.products{
+    padding-bottom: 0;
+}
+.name h4{
+    margin: 5% 5%;
+    text-align:center;
+}
+.name P{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 1% 5%;
+    color: #666666;
+    font-weight: 500;
+    padding: 0 10px;
+    background-color: rgb(255,255,255, .4);
+    border-radius: 5px;
+}
+.main{
+    padding-bottom: 0px;
+}
+.socialMedia{
+    display: none;
+}
+.backToTop {
+    width: 35px;
+}
+/* RWD */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .width{
+        max-width: 800px;
+    }
+    .banner{
+        background-image: url(../picture/homebanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .mainTxt .socialMedia{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        width:50px;
+        position: fixed;
+        background-color: rgba(67, 100, 155, 0.3);
+        border-radius: 0px 20px 20px 0px;
+        padding: 5px 1px; 
+        z-index: 1;
+    }
+    .mainTxt .socialMedia img{
+        width:32px
+    }
+    .mainTxt .socialMedia a{
+        transform: translateY(0);
+        width: 32px;
+        padding: 2px 0;
+        margin: 0 auto;
+    }
+    .mainTxt .socialMedia a:hover{
+        transform: translateY(-5px);
+        transition: .5s;
+    }
+    .mainTxt .first .animation h2{
+        color: #fff;
+        letter-spacing: 1px;
+        opacity: 85%;
+        margin-bottom: 20px;
+        display: inline-block;
+        line-height: 1;
+        font-size: 3em;
+    }
+    .mainTxt .first .animation p{
+        color: #fff;
+        opacity: 85%;
+        display: inline-block;
+        font-size: 1.5em;
+    }
+    .mainTxt .first{
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        text-align: left;
+        align-items: flex-start;
+        width: 50%;
+        transform: translate(-40%,-40%);
+    }
+    .animation{
+        padding: 20px;
+        margin: 10px auto;
+    }
+    .animation p{
+        color: #fff;
+        font-size: 30px;
+        opacity: 85%;
+        text-align: center;
+        display: inline-block;
+    }
+    .mainTxt .first .animation button{
+        display: block;
+        cursor: pointer;
+        background-color: #E88C6B;
+        color: #fff;
+        margin:  6% auto 0;
+        padding:10px 20px;
+        border-radius: 300px;
+        border: none;
+        letter-spacing: 0.2em;
+        transform: translate(0);
+        transition: .3s;
+        font-size: 1em;
+        height: 5vh;
+    }
+    .mainTxt .first .animation button:hover{
+        background-color: #fff;
+        color: #E88C6B;
+    }
+    /* concept */
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .threePoints img{
+        width: 30%;
+    }
+    .item.article{
+        max-width: 800px;
+        padding:50px;
+        background-color: #fff;
+        border: 1px  rgb(212, 212, 212) solid;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: .5s;
+        box-shadow: none;
+    }
+    .item.article img{
+        width: 30%;
+        border-radius: 15px;
+    }
+    .txt h4{
+        text-align: left;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        flex-grow: 1;
+    }
+    .txt p{
+        line-height: 1.7;
+        text-align: justify;
+        font-size: 1.3em;
+        padding: 10px 0;
+        flex-grow: 1;
+        font-weight: normal;
+    }
+    .txt a{
+        text-decoration: none;
+        color: #666666;
+        display: inline-block;
+    }
+    .item .txt h4:hover, .item .txt p:hover{
+        color: #EF8463;
+    }
+    .goods{
+        padding: 1em;
+        max-width: 800px;
+    }
+    .goods .pic {
+        margin: auto;
+        width: 500px;
+        border-radius: 15px;
+    }
+    .name h4{
+        flex-grow: 1;
+        text-align: center;
+        margin: 5% 0;
+    }
+    .name P{
+        color: #666666;
+        font-size: 1.3em;
+        line-height: 1.7;
+        text-align: justify;
+        font-weight: 300;
+    }
+    
+
+}
+
+@media (min-width: 1200px) {
+    .width{
+        width: 70%;
+    }
+    main{
+        padding-bottom:0 ;
+    }
+    .banner{
+        background-image: url(../picture/homebanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    /*Icon*/
+    .mainTxt .socialMedia{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15%;
+        width: 60px;
+        position: fixed;
+        background-color: rgba(67, 100, 155, 0.3);
+        border-radius: 0px 20px 20px 0px;
+        padding: 5px 3px; 
+    }
+    .mainTxt .socialMedia a{
+        transform: translateY(0);
+        width: 32px;
+        padding: 4px;
+    }
+    .mainTxt .socialMedia a:hover{
+        transform: translateY(-5px);
+        transition: .5s;
+    }
+     /*First Page*/
+    .animation{
+        display: flex;
+        border-radius: 5px;
+        margin: 0 400px;
+    }
+    .mainTxt .first .animation h2{
+        margin-bottom: 40px 0;
+        display: inline-block;
+        text-align: center;
+        font-size: 5em;
+    }
+    .mainTxt .first .animation p{
+        color: #fff;
+        font-size: 2em;
+        opacity: 85%;
+        text-align: center;
+        display: inline-block;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .button a{
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+     /*Concept*/
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .threePoints img{
+        width: 30%;
+    }
+     /*News*/
+    .news .item{
+        margin: 0 5%;
+        box-sizing: border-box ;
+    }
+    .item.article{
+        max-width: 800px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px  rgb(212, 212, 212) solid;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: .5s;
+        box-shadow: none;
+    }
+    .item .txt{
+        margin: 4% 6%;
+    }
+    .txt h4{
+        text-align: left;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        line-height: 1.5;
+        flex-grow: 1;
+    }
+    .txt p{
+        line-height: 1.7;
+        text-align: justify;
+        font-size: 1.3em;
+        padding: 10px 0;
+        flex-grow: 1;
+        font-weight: normal;
+    }
+    .txt a{
+        text-decoration: none;
+        color: #666666;
+        display: inline-block;
+    }
+    .item .txt h4:hover, .item .txt p:hover{
+        color: #EF8463;
+    }
+    .goods{
+        padding: 1em;
+    }
+    .goods .pic img{
+        margin: auto;
+        width: 50%;
+        border-radius: 15px;
+    }
+    .name h4{
+        flex-grow: 1;
+        text-align: center;
+        margin: 5% 0;
+    }
+    .name P{
+        color: #666666;
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 1.7;
+        text-align: justify;
+        font-weight: 300;
+    }
+}
+    

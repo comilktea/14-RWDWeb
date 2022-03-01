@@ -1,0 +1,178 @@
+/* banner */
+.bigScreen{
+    display: none;
+}
+
+/* path麵包屑 */
+.path{
+    margin: 15px 10px 15px 0;
+}
+.path ul{
+    list-style: none;
+    display: flex;
+}
+.path li{
+    position: relative;
+    padding: 10px;
+}
+.path li a{
+    color: #3F6E29;
+    font-size: 1em;
+}
+.path a::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #3F6E29;
+    transition: 0.4s ease-in-out;
+}
+.path a:hover:after{
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+}
+
+.path span{
+    color: #FFA015;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.path li + li::before{
+    content: '/';
+    color: #D0CDC2;
+    position: absolute;
+    left: 0;
+}
+/* 文章卡片 */
+article{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic img{
+    width: 100%;
+}
+
+.txt{
+    padding: 2%;
+    margin: 5% 5% 0 5%;
+}
+.txt p{
+    font-size: 1em;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #666;
+    margin: 10px;
+}
+.txt .articleImg{
+    width: 100%;
+    margin: 20px 0;
+}
+.date{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.date h5{
+    margin-left: 2%;
+}
+.readMore{
+    vertical-align: top;
+}
+
+/* 推薦文章 */
+.recommend{
+    padding-top: 40px;
+}
+.recommendCard{
+    cursor: pointer;
+}
+.recommendCard .txtTitle{
+    margin: 10px 0;
+    color: #666;
+ }
+.recommendCard .txtTitle:hover{
+    color: #FFA015;
+}
+@media screen and (max-width:991px) {
+    .pt-15{
+        padding-top: 15%;
+    }
+}
+@media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+        margin: auto;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(../pic/banner-carrot.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+    /* 文章卡片 */
+    .article{
+        padding: 1%;
+        margin: 3%;
+        border-radius: 10px;
+        margin-bottom: 3%;
+        box-shadow: 0px 0px 10px 2px #eee;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article:hover{
+        box-shadow: 0px 0px 10px 2px #ccc;
+    }
+    .txt{
+        padding: 2%;
+    }
+    .txt p{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+    }
+    .date{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .pic img{
+        vertical-align: top;
+    }
+    .readMore{
+        vertical-align: top;
+    }
+}
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
