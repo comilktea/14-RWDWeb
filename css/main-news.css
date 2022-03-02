@@ -150,7 +150,7 @@ button:active{
     }
     .bigScreen{
         display: block;
-        background-image: url(/picture/bannnews.jpg);
+        background-image: url(../picture/bannnews.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
