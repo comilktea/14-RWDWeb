@@ -1,6 +1,6 @@
 /* banner */
 .smallScreen{
-    background-image: url(/picture/mbbannernews.png);
+    background-image: url(../picture/mbbannernews.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
