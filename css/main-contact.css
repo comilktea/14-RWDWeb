@@ -151,4 +151,7 @@ textarea{
         max-width: 1200px;
         margin: auto;
     }
+    .row {
+        margin: 0 auto;
+    }
 }
